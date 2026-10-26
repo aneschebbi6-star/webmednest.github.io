@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f8fc">
+    <meta
+      name="description"
+      content="Découvrez les offres MedNest, le prototype de gestion de cabinet médical pensé pour les professionnels de santé en Tunisie."
+    >
+    <title>MedNest — Votre cabinet, organisé simplement</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#accueil" aria-label="MedNest, accueil">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M8 29.5V10.8c0-1.5 1.8-2.2 2.8-1.1L20 20l9.2-10.3c1-1.1 2.8-.4 2.8 1.1v18.7" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 20v10" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+              <circle cx="31.8" cy="30.5" r="3.2" fill="#11B8AA"/>
+            </svg>
+          </span>
+          <span class="brand-name">med<span>nest</span></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Navigation principale">
+          <a href="#fonctionnalites">Fonctionnalités</a>
+          <a href="#tarifs">Tarifs</a>
+          <a href="#securite">Sécurité</a>
+          <a href="#faq">FAQ</a>
+          <a class="button button-small button-primary nav-cta" href="#tarifs">Choisir mon abonnement</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="accueil">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Le cabinet médical, en toute simplicité</div>
+            <h1>Votre cabinet médical,<br><span>organisé simplement.</span></h1>
+            <p class="hero-lead">Patients, rendez-vous, consultations et gestion quotidienne réunis dans une seule application pensée pour les cabinets médicaux.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#tarifs">Découvrir les offres <span aria-hidden="true">↗</span></a>
+              <a class="button button-secondary" href="#apercu"><span class="play-icon" aria-hidden="true">▶</span> Voir la démonstration</a>
+            </div>
+            <div class="hero-assurance">
+              <span class="assurance-icon" aria-hidden="true">✓</span>
+              <span>Prototype de présentation <span class="assurance-separator">·</span> Démo sans données réelles</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" id="apercu" aria-label="Aperçu illustratif du tableau de bord MedNest">
+            <div class="visual-orbit orbit-one"></div>
+            <div class="visual-orbit orbit-two"></div>
+            <div class="dashboard-window">
+              <div class="dashboard-topbar">
+                <div class="mini-brand"><span class="mini-mark">✚</span> mednest</div>
+                <div class="topbar-actions"><span class="topbar-search">⌕</span><span class="avatar">Dr</span></div>
+              </div>
+              <div class="dashboard-content">
+                <div class="dashboard-heading">
+                  <div><div class="dashboard-greeting">Bonjour, docteur 👋</div><div class="dashboard-date">Voici votre journée en un coup d’œil.</div></div>
+                  <span class="today-pill">Aujourd’hui</span>
+                </div>
+                <div class="stats-grid">
+                  <div class="stat-card"><span class="stat-label">Patients suivis</span><strong>248</strong><span class="stat-note"><i class="stat-dot dot-blue"></i> Dossiers de démonstration</span></div>
+                  <div class="stat-card"><span class="stat-label">Rendez-vous</span><strong>12</strong><span class="stat-note"><i class="stat-dot dot-teal"></i> 4 à venir</span></div>
+                </div>
+                <div class="agenda-card">
+                  <div class="agenda-title"><strong>Prochains rendez-vous</strong><span>Voir l’agenda <span aria-hidden="true">→</span></span></div>
+                  <div class="appointment"><span class="appointment-time">09:30</span><span class="patient-avatar patient-a">SA</span><span class="patient-info"><b>Salma A.</b><small>Consultation de suivi</small></span><span class="appointment-status">Confirmé</span></div>
+                  <div class="appointment"><span class="appointment-time">10:15</span><span class="patient-avatar patient-b">MK</span><span class="patient-info"><b>Mehdi K.</b><small>Consultation générale</small></span><span class="appointment-status status-wait">En attente</span></div>
+                  <div class="appointment"><span class="appointment-time">11:00</span><span class="patient-avatar patient-c">YR</span><span class="patient-info"><b>Yasmine R.</b><small>Contrôle de routine</small></span><span class="appointment-status">Confirmé</span></div>
+                </div>
+              </div>
+              <div class="dashboard-footnote"><span class="footnote-dot"></span> Données entièrement fictives</div>
+            </div>
+            <div class="floating-card floating-calendar"><span class="floating-icon">▦</span><span><b>Agenda du jour</b><small>Un aperçu clair</small></span></div>
+            <div class="floating-card floating-shield"><span class="shield-icon">✓</span><span><b>Simple & intuitif</b><small>Conçu pour votre cabinet</small></span></div>
+          </div>
+        </div>
+        <div class="container hero-bottom">
+          <span>Une organisation plus sereine, au quotidien</span>
+          <div class="hero-bottom-items"><span><i>✓</i> Tout au même endroit</span><span><i>✓</i> Pensé pour la Tunisie</span><span><i>✓</i> Sans engagement dans la démo</span></div>
+        </div>
+      </section>
+
+      <section class="section features-section" id="fonctionnalites">
+        <div class="container">
+          <div class="section-heading">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Une organisation pensée pour vous</div>
+            <h2>Les essentiels de votre cabinet,<br><span>réunis au même endroit.</span></h2>
+            <p>Un aperçu des outils envisagés pour vous aider à garder le fil de votre activité.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card"><span class="feature-icon icon-blue">♙</span><h3>Gestion des patients</h3><p>Retrouvez les dossiers et les informations utiles en un seul endroit.</p><span class="feature-label">Dans le prototype</span></article>
+            <article class="feature-card"><span class="feature-icon icon-teal">▦</span><h3>Agenda & rendez-vous</h3><p>Visualisez les rendez-vous et organisez le rythme de votre journée.</p><span class="feature-label">Dans le prototype</span></article>
+            <article class="feature-card"><span class="feature-icon icon-purple">▤</span><h3>Consultations</h3><p>Consignez une consultation de démonstration dans le dossier patient.</p><span class="feature-label">Dans le prototype</span></article>
+            <article class="feature-card"><span class="feature-icon icon-orange">✎</span><h3>Ordonnances</h3><p>Explorez un aperçu de préparation d’ordonnance, sans usage médical réel.</p><span class="feature-label">Aperçu illustratif</span></article>
+            <article class="feature-card"><span class="feature-icon icon-green">◷</span><h3>Gestion des recettes</h3><p>Suivez les recettes fictives de votre activité depuis une vue synthétique.</p><span class="feature-label">Dans le prototype</span></article>
+            <article class="feature-card feature-future"><span class="feature-icon icon-navy">✧</span><h3>Assistant IA local</h3><p>Une piste d’évolution pour accompagner la recherche documentaire.</p><span class="feature-label future-label">Fonctionnalité future</span></article>
+          </div>
+          <p class="features-disclaimer">Les fonctionnalités affichées sont présentées à titre de prototype. Leur disponibilité commerciale n’est pas confirmée.</p>
+        </div>
+      </section>
+
+      <section class="section pricing-section" id="tarifs">
+        <div class="container">
+          <div class="section-heading pricing-heading">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Des offres simples et lisibles</div>
+            <h2>Choisissez la formule<br><span>qui vous ressemble.</span></h2>
+            <p>Des propositions tarifaires en dinars tunisiens, à confirmer avant toute commercialisation.</p>
+          </div>
+          <div class="pricing-grid">
+            <article class="price-card">
+              <div class="plan-name">Essential</div>
+              <p class="plan-description">Les essentiels pour démarrer simplement.</p>
+              <div class="plan-price"><strong>29</strong><span>TND <small>/ mois</small></span></div>
+              <div class="plan-rule"></div>
+              <p class="plan-includes">Ce qui est envisagé :</p>
+              <ul class="plan-list">
+                <li><span>✓</span> Gestion des patients</li><li><span>✓</span> Agenda et rendez-vous</li><li><span>✓</span> Rappels et suivi</li><li><span>✓</span> Journal des recettes de base</li>
+              </ul>
+              <button class="button button-outline choose-plan" type="button" data-plan="Essential" data-price="29">Choisir cette offre <span aria-hidden="true">→</span></button>
+            </article>
+            <article class="price-card price-featured">
+              <div class="popular-badge"><span>✦</span> Offre mise en avant</div>
+              <div class="plan-name">Elite Copilot</div>
+              <p class="plan-description">Pour explorer une assistance enrichie.</p>
+              <div class="plan-price"><strong>79</strong><span>TND <small>/ mois</small></span></div>
+              <div class="plan-rule"></div>
+              <p class="plan-includes">Tout Essential, et aussi :</p>
+              <ul class="plan-list">
+                <li><span>✓</span> Concept d’assistance IA locale</li><li><span>✓</span> Recherche documentaire DPM/CNAM</li><li><span>✓</span> Aide à la préparation des ordonnances</li><li><span>✓</span> Fonctionnalités en cours de réflexion</li>
+              </ul>
+              <button class="button button-primary choose-plan" type="button" data-plan="Elite Copilot" data-price="79">Choisir cette offre <span aria-hidden="true">→</span></button>
+            </article>
+            <article class="price-card">
+              <div class="plan-name">Cabinet Complet</div>
+              <p class="plan-description">Une organisation partagée pour l’équipe.</p>
+              <div class="plan-price"><strong>99</strong><span>TND <small>/ mois</small></span></div>
+              <div class="plan-rule"></div>
+              <p class="plan-includes">Ce qui est envisagé :</p>
+              <ul class="plan-list">
+                <li><span>✓</span> Accès médecin et secrétaire</li><li><span>✓</span> Gestion centralisée du cabinet</li><li><span>✓</span> Support prioritaire envisagé</li><li><span>✓</span> Mises à jour selon les conditions de l’offre</li>
+              </ul>
+              <button class="button button-outline choose-plan" type="button" data-plan="Cabinet Complet" data-price="99">Choisir cette offre <span aria-hidden="true">→</span></button>
+            </article>
+          </div>
+          <div class="pricing-note"><span aria-hidden="true">ⓘ</span> Ces tarifs et fonctionnalités sont des propositions de présentation, à confirmer avant toute commercialisation.</div>
+        </div>
+      </section>
+
+      <section class="section security-section" id="securite">
+        <div class="container security-panel">
+          <div class="security-illustration" aria-hidden="true">
+            <div class="security-circle"><svg viewBox="0 0 80 80" fill="none"><path d="M40 9 64 18v18c0 16-10.6 27.6-24 35C26.6 63.6 16 52 16 36V18l24-9Z" fill="#E3F6F4" stroke="#11B8AA" stroke-width="3"/><path d="m29 40 7.5 7.5L52 32" stroke="#12539A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <span class="security-spark spark-a">✦</span><span class="security-spark spark-b">✧</span>
+          </div>
+          <div class="security-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Transparence avant tout</div>
+            <h2>Vos données méritent<br><span>des réponses claires.</span></h2>
+            <p>Cette page et l’application sont des prototypes de présentation. Ne saisissez aucune donnée médicale réelle ou sensible.</p>
+            <ul class="security-points"><li><span>✓</span> Aucune donnée bancaire demandée</li><li><span>✓</span> Le formulaire de démo n’envoie rien à un serveur</li><li><span>✓</span> Aucune promesse de certification ou de conformité</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="container faq-layout">
+          <div class="faq-intro">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Besoin d’éclaircissements ?</div>
+            <h2>Questions<br><span>fréquentes.</span></h2>
+            <p>Le projet évolue. Voici ce qu’il est important de savoir dès maintenant.</p>
+            <a href="#tarifs" class="faq-link">Comparer les offres <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item"><summary>Qu’est-ce que MedNest ?<span class="faq-toggle" aria-hidden="true"></span></summary><p>MedNest est un projet de logiciel de gestion de cabinet médical. Cette page présente un prototype et ne constitue pas un service médical opérationnel.</p></details>
+            <details class="faq-item"><summary>À qui s’adresse le logiciel ?<span class="faq-toggle" aria-hidden="true"></span></summary><p>Le concept s’adresse aux professionnels de santé et aux équipes de cabinet médical. Les usages et modalités définitifs restent à confirmer.</p></details>
+            <details class="faq-item"><summary>Quelle est la différence entre les offres ?<span class="faq-toggle" aria-hidden="true"></span></summary><p>Essential rassemble les outils de base envisagés ; Elite Copilot présente un concept d’assistance supplémentaire ; Cabinet Complet propose une approche partagée médecin-secrétaire. Ces offres sont des propositions.</p></details>
+            <details class="faq-item"><summary>Le paiement en ligne est-il disponible ?<span class="faq-toggle" aria-hidden="true"></span></summary><p>Non. Le paiement en ligne sera bientôt disponible. La souscription présente sur cette page est une simulation : aucun paiement réel n’est effectué.</p></details>
+            <details class="faq-item"><summary>Mes données médicales sont-elles stockées en ligne ?<span class="faq-toggle" aria-hidden="true"></span></summary><p>Cette page statique ne collecte ni n’enregistre de données. Le prototype de l’application fonctionne localement avec des données fictives. N’y saisissez pas d’informations réelles.</p></details>
+            <details class="faq-item"><summary>L’assistant IA est-il déjà disponible ?<span class="faq-toggle" aria-hidden="true"></span></summary><p>Non. L’assistant IA est une fonctionnalité future. La démonstration actuelle n’intègre aucun modèle d’intelligence artificielle.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-cta">
+        <div class="container closing-content">
+          <div><span class="closing-kicker">MedNest · Prototype de présentation</span><h2>Prêt à découvrir<br>une autre façon de vous organiser ?</h2></div>
+          <a class="button button-white" href="#tarifs">Découvrir les abonnements <span aria-hidden="true">↗</span></a>
+          <span class="closing-decoration decoration-one"></span><span class="closing-decoration decoration-two"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-about">
+            <a class="brand footer-brand" href="#accueil" aria-label="MedNest, retour à l’accueil"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M8 29.5V10.8c0-1.5 1.8-2.2 2.8-1.1L20 20l9.2-10.3c1-1.1 2.8-.4 2.8 1.1v18.7" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 20v10" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="31.8" cy="30.5" r="3.2" fill="#11B8AA"/></svg></span><span class="brand-name">med<span>nest</span></span></a>
+            <p>Le projet d’un cabinet médical<br>mieux organisé, en toute simplicité.</p>
+            <span class="footer-prototype"><i></i> Prototype de présentation</span>
+          </div>
+          <div class="footer-links"><h3>Explorer</h3><a href="#fonctionnalites">Fonctionnalités</a><a href="#tarifs">Tarifs</a><a href="#securite">Sécurité</a><a href="#faq">Questions fréquentes</a></div>
+          <div class="footer-links"><h3>Informations</h3><span>Contact à configurer</span><span>Conditions générales à compléter</span><span>Politique de confidentialité à compléter</span></div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 MedNest — Prototype de présentation</span><span>Les tarifs et fonctionnalités sont indicatifs et restent à confirmer.</span></div>
+      </div>
+    </footer>
+
+    <dialog class="subscribe-dialog" id="subscribe-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-top">
+        <a class="brand dialog-brand" href="#accueil" aria-label="MedNest"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M8 29.5V10.8c0-1.5 1.8-2.2 2.8-1.1L20 20l9.2-10.3c1-1.1 2.8-.4 2.8 1.1v18.7" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 20v10" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="31.8" cy="30.5" r="3.2" fill="#11B8AA"/></svg></span><span class="brand-name">med<span>nest</span></span></a>
+        <button class="dialog-close" type="button" aria-label="Fermer la fenêtre">×</button>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-heading"><div class="eyebrow"><span class="eyebrow-dot"></span> Parcours de démonstration</div><h2 id="dialog-title">Votre prochaine étape,<br><span>en toute simplicité.</span></h2><p>Choisissez le mode souhaité pour continuer.</p></div>
+        <div class="selected-plan"><div><span class="selected-plan-label">Offre sélectionnée</span><strong id="selected-plan-name">Essential</strong></div><div class="selected-plan-price"><strong id="selected-plan-price">29 TND</strong><span>/ mois</span></div></div>
+        <div class="mode-switch" role="group" aria-label="Mode de souscription">
+          <button class="mode-option active" type="button" data-mode="demo" aria-pressed="true"><span class="mode-check">✓</span> Mode démo</button>
+          <button class="mode-option" type="button" data-mode="real" aria-pressed="false"><span class="mode-check"></span> Paiement réel <small>Bientôt</small></button>
+        </div>
+        <div class="demo-panel" id="demo-panel">
+          <form id="subscribe-form">
+            <p class="form-note">Simulation uniquement. Ces informations ne sont ni transmises ni enregistrées.</p>
+            <label for="clinic-name">Nom du cabinet</label>
+            <input id="clinic-name" name="clinic" type="text" autocomplete="organization" required maxlength="100" placeholder="Ex. Cabinet médical">
+            <label for="professional-email">E-mail professionnel</label>
+            <input id="professional-email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="vous@cabinet.tn">
+            <label for="clinic-phone">Téléphone <span>(facultatif)</span></label>
+            <input id="clinic-phone" name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="+216">
+            <button class="button button-primary dialog-submit" type="submit">Continuer la simulation <span aria-hidden="true">→</span></button>
+            <p class="no-payment"><span aria-hidden="true">🔒</span> Aucun paiement réel · Aucune carte bancaire demandée</p>
+          </form>
+        </div>
+        <div class="real-panel" id="real-panel" hidden>
+          <div class="coming-soon-icon" aria-hidden="true">◷</div><h3>Le paiement en ligne sera bientôt disponible.</h3><p>Aucun prestataire de paiement n’est configuré. Vous ne serez pas redirigé et aucun paiement ne sera tenté.</p>
+          <button class="button button-outline dialog-submit" type="button" id="real-payment-button">Compris</button>
+        </div>
+        <div class="confirmation-panel" id="confirmation-panel" hidden aria-live="polite">
+          <div class="confirmation-icon" aria-hidden="true">✓</div><h3>Simulation réussie</h3><p class="confirmation-status">Aucun paiement réel n’a été effectué.</p>
+          <div class="confirmation-summary"><span>Cabinet</span><strong id="confirmation-clinic"></strong><span>Offre</span><strong id="confirmation-plan"></strong><span>Prix indicatif</span><strong id="confirmation-price"></strong></div>
+          <p class="confirmation-email" id="confirmation-email"></p>
+          <button class="button button-primary dialog-submit" type="button" id="confirmation-close">Terminer</button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
